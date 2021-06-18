@@ -17,7 +17,7 @@ class AfterThreeYears {
 		test = test.minusYears(5);
 		DateTimeFormatter fomatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日(E)",Locale.JAPANESE);
 		String format = local.format(fomatter);
-	    String format2 = test.format(fomatter);
+		String format2 = test.format(fomatter);
 		System.out.println("3年後の今日は" + format + "です\n5年前の今日は" + format2 + "です");
 	}
 }

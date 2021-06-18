@@ -10,5 +10,4 @@ class Judgment {
 			throw new Exception();
 		}
 	}
-
 }
