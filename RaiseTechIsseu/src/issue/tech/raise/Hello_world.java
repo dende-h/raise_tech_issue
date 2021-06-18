@@ -31,8 +31,25 @@ package issue.tech.raise;
 				//課題５のコード
 					System.out.println("課題5の出力");
 					Dinosaur.dinosaurList();
-					
+					System.out.println("\n課題5の出力2");
+					try {
+						Animation.favoriteAnime(1);
+					} catch (Exception e) {
+						System.out.println("1～5の中から選んでください\nもう一度だけ聞きます\n");
+						try {
+							Animation.favoriteAnime(1);
+						} catch (Exception e1) {
+							try {
+								Animation.favoriteAnime(2);
+							} catch (Exception e2) {
+							
+							} finally {
+								System.out.println("感想お待ちしてます!!");
+							}
+						}
+					}
 			}
 		}
+		
 		 
 
